@@ -28,7 +28,7 @@ git push -f $githeeUrl master # 推送到gitee
 cd - # 退回开始所在目录
 rm -rf docs/.vuepress/dist
 
-if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
+if [ -z "$GITEE_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
   # 依赖puppeteer
   # 可以用 cnpm install puppeteer 安装
   node deploy-gitee.js

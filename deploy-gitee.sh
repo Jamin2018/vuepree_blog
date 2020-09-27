@@ -12,7 +12,9 @@ msg='deploy'
 # 设置gitee的用户名
 git config --global user.name "JaminXie"
 git config --global user.email "389098898@qq.com"
-githeeUrl=https://gitee.com/JaminXie/JaminXie.git  # gitee项目地址
+#githeeUrl=https://gitee.com/JaminXie/JaminXie.git  # gitee项目地址
+githeeUrl=https:JaminXie:q8850063//gitee.com/JaminXie/JaminXie.git  # 使用github CI
+
 git init
 git add -A
 git commit -m "${msg}"

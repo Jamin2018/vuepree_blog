@@ -32,3 +32,4 @@ if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_T
   # 依赖puppeteer
   # 可以用 cnpm install puppeteer 安装
   node deploy-gitee.js
+fi

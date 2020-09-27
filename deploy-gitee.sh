@@ -12,8 +12,9 @@ msg='deploy'
 # 设置gitee的用户名
 git config --global user.name "JaminXie"
 git config --global user.email "389098898@qq.com"
+GITHUB_TOKEN='3f8cb4b7252b9a0afa52b3c075e6dc54'
 #githeeUrl=https://gitee.com/JaminXie/JaminXie.git  # gitee项目地址
-githeeUrl=https:JaminXie:q8850063//gitee.com/JaminXie/JaminXie.git  # 使用github CI
+githeeUrl=https://JaminXie:${GITHUB_TOKEN}@gitee.com/JaminXie/JaminXie.git  # 使用github CI
 
 git init
 git add -A

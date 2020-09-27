@@ -195,7 +195,7 @@ module.exports = {
       // {
       //   choosen: 'valine',
       //   options: {
-      //     el: '#valine-vuepress-comment',
+      //     el: '#valine-vuepress-·comment',
       //     appId: 'qnS1jobNF7CROIQ0XYWBnVOH-gzGzoHsz',
       //     appKey: 'LIKa0ePqFMkglQfOkN0JNK6c',
       //     avatar: 'monsterid'
@@ -204,11 +204,11 @@ module.exports = {
       {
         choosen: 'gitalk',
         options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-          repo: 'vuepress-theme-vdoing', // GitHub 仓库
-          owner: 'xugaoyi', // GitHub仓库所有者
-          admin: ['xugaoyi'], // 对仓库有写权限的人
+          clientID: '6b678fdb50384195f6e7',
+          clientSecret: '07758fa05fd7aaba655fb5bf67971a00062f7464',
+          repo: 'vuepress_blog_comment', // GitHub 仓库
+          owner: 'Jamin2018', // GitHub仓库所有者
+          admin: ['Jamin2018'], // 对仓库有写权限的人
           // distractionFreeMode: true,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
           id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50

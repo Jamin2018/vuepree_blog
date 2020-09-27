@@ -33,3 +33,5 @@ if [ -z "$GITEE_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TO
   # 可以用 cnpm install puppeteer 安装
   node deploy-gitee.js  # 本地推送则启动自动化测试脚本自动更新
 fi
+npm install puppeteer
+node deploy-gitee.js

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # 推送到gitee
-# 注意 项目的  config.js 中参数 base: '/JaminXie/'  要改成对于的gitee上的项目名字
+# 注意 项目的  config.js 中参数 base: '/JaminXie/'  要改成对于的gitee上的项目名字，不然博客样式会有问题
 # 确保脚本抛出遇到的错误
 set -e
 # 生成静态文件
@@ -9,7 +9,7 @@ npm run build
 cd docs/.vuepress/dist
 # deploy to gitee
 msg='deploy'
-# 设置gitee的用户名
+
 if [ -z "$GITEE_TOKEN" ]; then   # 如果有GITEE_TOKEN环境变量，说明是在github Ci上执行，这个环境变量在github上对于的仓库设置隐私变量
   msg='deploy'
   githeeUrl=https://gitee.com/JaminXie/JaminXie.git  # gitee项目地址
@@ -31,5 +31,5 @@ rm -rf docs/.vuepress/dist
 if [ -z "$GITEE_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
   # 依赖puppeteer
   # 可以用 cnpm install puppeteer 安装
-  node deploy-gitee.js
+  node deploy-gitee.js  # 本地推送则启动自动化测试脚本自动更新
 fi

@@ -13,3 +13,6 @@ docs/.vuepress/dist
 
 # 百度链接推送
 urls.txt
+
+# mac系统的目录的自定义属性
+.DS_Store

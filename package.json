@@ -6,6 +6,7 @@
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "deployGitee": "bash deploy-gitee.sh",
+    "baiduPush": "node utils/baiduPush.js https://jaminxie.gitee.io && bash baiduPush.sh",
     "editFm": "node utils/editFrontmatter.js"
   },
   "license": "MIT",
